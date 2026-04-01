@@ -1,5 +1,7 @@
 package model;
 
+import model.constants.Discount;
+
 public abstract class Food implements Discountable {
     protected byte amount;
     protected double price;
@@ -15,6 +17,11 @@ public abstract class Food implements Discountable {
 
     public byte getAmount () {
         return amount;
+    }
+
+    @Override
+    public double getDiscount() {
+        return Discount.DISCOUNT_0;
     }
 
 }
