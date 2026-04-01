@@ -1,8 +1,6 @@
 package model;
 
-import model.constants.Discount;
-
-public class Meat extends Food implements Discountable {
+public class Meat extends Food {
 
     public Meat (byte amount, double price) {
         this.amount = amount;
@@ -10,8 +8,4 @@ public class Meat extends Food implements Discountable {
         isVegetarian = false;
     }
 
-    @Override
-    public byte getDiscount() {
-        return Discount.DISCOUNT_0;
-    }
 }

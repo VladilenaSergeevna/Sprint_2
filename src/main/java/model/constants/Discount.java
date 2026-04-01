@@ -2,6 +2,6 @@ package model.constants;
 
 public class Discount {
 
-    public static final byte DISCOUNT_0 = 0;
-    public static final byte DISCOUNT_60 = 60;
+    public static final float DISCOUNT_0 = 0;
+    public static final float DISCOUNT_60 = 60;
 }
